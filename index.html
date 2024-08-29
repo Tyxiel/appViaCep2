@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Css/style.css" />
+    <title>App Busca Cep</title>
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="text"
+        placeholder="CEP"
+        class="input-cep input"
+        required
+        onblur="Consultar()"
+      />
+      <input type="text" class="estado-cidade input" placeholder="Cidade, Estado" disabled />
+      <input
+        type="text"
+        class="endereco input"
+        placeholder="Endereço"
+        disabled
+      />
+      <input type="number" class="ddd input" placeholder="DDD" disabled />
+    </div>
+    <script src="./Js/app.js"></script>
+  </body>
+</html>

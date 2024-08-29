@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    135deg,
+    white 0%,
+    gray 50%,
+    black 100%
+  );
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 2px dashed lightgray;
+  padding: 10px;
+  gap: 5px;
+  border-radius: 6px;
+  --width-of-input: max-content;
+  --border-height: 1px;
+  --border-before-color: rgba(221, 221, 221, 0.39);
+  --border-after-color: #5891ff;
+  --input-hovered-color: #4985e01f;
+  position: relative;
+  min-width: var(--width-of-input);
+  max-width: 100%;
+  background: rgb(0, 0, 0, 0.5);
+  place-content: center;
+}
+
+.input {
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  border-bottom: var(--border-height) solid var(--border-before-color);
+  display: inline-block;
+  transition: width 0.3s ease; /* Smooth transition */
+}
+
+.input-border {
+  position: absolute;
+  background: var(--border-after-color);
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+input:hover {
+  background: var(--input-hovered-color);
+}
+
+input:focus {
+  outline: none;
+}
+
+input:focus ~ .input-border {
+  width: 100%;
+}
+
+input::placeholder {
+  color: lightgray;
+}
