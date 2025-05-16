@@ -25,7 +25,7 @@ O App Busca CEP é uma ferramenta front-end que visa facilitar a obtenção de i
 
 ## Como Usar/Testar
 
-1.  Clone este repositório: `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
+1.  Clone este repositório: `git clone https://github.com/Tyxiel/appViaCep2.git`
 2.  Navegue até o diretório do projeto.
 3.  Abra o arquivo `index.html` no seu navegador.
 4.  Digite um CEP válido no campo "CEP" e clique fora do campo (ou pressione Tab) para ver as informações.
