@@ -31,3 +31,7 @@ O App Busca CEP é uma ferramenta front-end que visa facilitar a obtenção de i
 4.  Digite um CEP válido no campo "CEP" e clique fora do campo (ou pressione Tab) para ver as informações.
 
 Ou acesse a demonstração online: [App Busca CEP](https://tyxiel.github.io/appViaCep2/)
+
+## Licença
+
+Este projeto é licenciado sob a **GNU Affero General Public License v3.0**.
